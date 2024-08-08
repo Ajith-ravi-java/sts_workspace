@@ -1771,3 +1771,28 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.hibernate
 2024-08-08 11:39:23,739 [Start Help Server] INFO  o.e.j.s.DefaultSessionIdManager - Session workerName=node0
 2024-08-08 11:39:23,774 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@454bc58f{HTTP/1.1, (http/1.1)}{127.0.0.1:61391}
 2024-08-08 11:39:23,839 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started oejs.Server@27c7d317{STARTING}[12.0.9,sto=0] @1909416ms
+2024-08-08 16:03:14,604 [Worker-48: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ajith:simpleCrud:0.0.1-SNAPSHOT @ C:\sts_workspace\simpleCrud\pom.xml.
+2024-08-08 16:03:14,610 [Worker-44: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.ajith:simpleCrud:0.0.1-SNAPSHOT @ C:\sts_workspace\simpleCrud\pom.xml.
+2024-08-08 16:03:25,127 [Worker-47: Updating Maven Dependencies] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - File not found: C:\sts_workspace\simpleCrud\pom.xml.
+org.eclipse.core.internal.resources.ResourceException: File not found: C:\sts_workspace\simpleCrud\pom.xml.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:882)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:299)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:589)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:491)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:370)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$4(ProjectRegistryRefreshJob.java:154)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1053)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.lambda$0(ProjectRegistryRefreshJob.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:106)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: File not found: C:\sts_workspace\simpleCrud\pom.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 17 common frames omitted

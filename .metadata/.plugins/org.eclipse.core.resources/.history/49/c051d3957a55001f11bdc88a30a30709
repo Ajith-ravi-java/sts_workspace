@@ -9,6 +9,7 @@ public class AmstrangExample {
 		int gettingNumber=0;
 		
 		int multipleNumber=0;
+
 	
 		while(number>0) {
 			

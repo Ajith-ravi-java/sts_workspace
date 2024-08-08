@@ -1,0 +1,102 @@
+package javaStreams;
+
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+class Student{
+	
+	private int id;
+	private String name;
+	private int tamil;
+	private int english;
+	private int math;
+	private int science;
+	private int social;
+	public Student(int id, String name,  int tamil, int english, int math, int science, int social) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.tamil = tamil;
+		this.english = english;
+		this.math = math;
+		this.science = science;
+		this.social = social;
+	}
+	@Override
+	public String toString() {
+		return "[id=" + id + ", name=" + name +  ", tamil=" + tamil + ", english=" + english
+				+ ", math=" + math + ", science=" + science + ", social=" + social + "]";
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public int getTamil() {
+		return tamil;
+	}
+	public void setTamil(int tamil) {
+		this.tamil = tamil;
+	}
+	public int getEnglish() {
+		return english;
+	}
+	public void setEnglish(int english) {
+		this.english = english;
+	}
+	public int getMath() {
+		return math;
+	}
+	public void setMath(int math) {
+		this.math = math;
+	}
+	public int getScience() {
+		return science;
+	}
+	public void setScience(int science) {
+		this.science = science;
+	}
+	public int getSocial() {
+		return social;
+	}
+	public void setSocial(int social) {
+		this.social = social;
+	}
+	
+	Student(){
+		
+	}
+	
+
+}
+
+
+public class GroupingByExample {
+
+	public static void main(String[] args) {
+
+		List<Student> s=List.of(
+				new Student(1, "ajith", 86, 71, 71, 90, 83),
+				new Student(2, "vijay", 67, 63, 98, 74, 89),
+				new Student(3, "ravi", 78, 98, 76, 45, 77),
+				new Student(4, "gowri", 67, 88, 99, 67, 95),
+				new Student(5, "prasanna", 77, 64, 49, 88, 91),
+				new Student(6, "praneeth", 99, 88, 44, 77, 93),
+				new Student(7, "revathi", 55, 43, 88, 46, 75)
+
+				);
+		
+		//s.stream().forEach(System.out::println);
+		
+	}
+
+}

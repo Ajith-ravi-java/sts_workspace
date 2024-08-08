@@ -1,0 +1,26 @@
+
+public class AmstrangExample {
+
+	public static void main(String[] args) {
+
+		int number=123;
+
+		int gettingNumber=0;
+		
+		int multipleNumber=0;
+
+	
+		while(number>0) {
+			
+			gettingNumber=number%10;
+			
+			multipleNumber=multipleNumber+gettingNumber*gettingNumber*gettingNumber;
+			
+		}
+	
+		System.out.println(multipleNumber);
+		
+		
+	}
+
+}

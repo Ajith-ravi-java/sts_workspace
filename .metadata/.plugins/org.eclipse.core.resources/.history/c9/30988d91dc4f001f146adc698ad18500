@@ -1,0 +1,30 @@
+
+public class AmstrangExample {
+
+	public static void main(String[] args) {
+
+		int number=153;
+
+		int original=number;
+		int gettingNumber=0;
+		
+		int multipleNumber=0;
+
+	
+		while(number>0) {
+			
+			gettingNumber=number%10;
+			number=number/10;
+			
+			multipleNumber=multipleNumber+gettingNumber*gettingNumber*gettingNumber;
+
+		}
+	
+		if(original==multipleNumber) 
+		System.out.println("Amstrang"+multipleNumber);
+		else System.out.println("not");
+		
+		
+	}
+
+}

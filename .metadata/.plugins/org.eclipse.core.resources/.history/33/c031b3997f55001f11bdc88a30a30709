@@ -3,6 +3,7 @@ public class AmstrangExample {
 
 	public static void main(String[] args) {
 
+		System.out.println(name("ajith"));
 		
 		int number=155;
 
@@ -27,7 +28,9 @@ public class AmstrangExample {
 		
 	}
 	
-	
+	public static String name(String name) {
+		return name;
+	}
 	
 
 }

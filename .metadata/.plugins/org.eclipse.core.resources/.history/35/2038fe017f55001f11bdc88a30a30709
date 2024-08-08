@@ -3,7 +3,6 @@ public class AmstrangExample {
 
 	public static void main(String[] args) {
 
-		
 		int number=155;
 
 		int original=number;
@@ -26,8 +25,5 @@ public class AmstrangExample {
 		
 		
 	}
-	
-	
-	
 
 }
